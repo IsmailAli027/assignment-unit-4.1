@@ -30,7 +30,8 @@ function addNumbers( firstNumber, secondNumber ) {
   let answer = firstNumber + secondNumber;
   // return firstNumber + secondNumber;
   return answer;
-}
+} // end addNumbers
+console.log('running addNumbers with 2 & 3:', addNumbers(2,3) );
 
 
 // 4. Function to multiply three numbers & return the result
