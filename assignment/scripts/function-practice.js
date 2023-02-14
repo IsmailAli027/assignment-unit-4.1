@@ -17,13 +17,14 @@ console.log("running Hello World!:", hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  console.log('in helloName:', name);
-  let names = [];
-  names.push(name)
-  return names;
+console.log('in helloName', name);
+return 'hello '+name
 }
+console.log(helloName("Ismail") );
+console.log(helloName("Stacy") );
+
 // Remember to call the function to test
-helloName('Hello, Ismail!');
+
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
