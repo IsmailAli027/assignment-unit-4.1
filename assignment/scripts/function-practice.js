@@ -18,7 +18,7 @@ console.log("running Hello World!:", hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
 console.log('in helloName', name);
-return 'hello '+name
+return 'hello '+ name
 }
 console.log(helloName("Ismail") );
 console.log(helloName("Stacy") );
@@ -71,29 +71,46 @@ console.log(isPositive(-3));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-  console.log('in getLast', array);
-  let items = [];
-  items.pop(array);
-  return items;
-}// end getLast
-console.log('running getLast', getLast());
+let drinks = ['Pepsi', 'Coke', 'Sprite', 'Fanta']
+
+function getLast( array ){
+  // console.log('The last drink is:', array.pop());
+  let lastItem = array.pop();
+  
+  return lastItem;
+}
+
+console.log('The last drink is:',getLast(drinks));
+
+
+function getLast( array ){
+  // console.log('The last drink is:', array.pop());
+  let lastItem = array.pop();
+  
+  return lastItem;
+}
+
+console.log('The last drink is:',getLast(drinks));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   console.log('in find', value, array);
-  let hand=['Q','3','J','9' ];
-  for(let x=0; x<hand.length; x++)
-  if(hand[x]==='8'){
+  for(let x=0; x<array.length; x++)
+  if(array[x]===value){
     return true;
   }
   else{
     return false;
   }
 }
-//could not figure this one out
+let hand=['Q','3','J','9'];
+find('Q', hand);
+console.log('Is my card there?:', find('10', hand ));
+
+
+
 // ----------------------
 // Stretch Goals
 // ----------------------
